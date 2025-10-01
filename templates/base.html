@@ -1,0 +1,15 @@
+{% block content %}
+  {% include "navbar.html" %}
+
+{% endblock %}
+
+<h2 class="d-flex justify-content-center align-items-center">enter your city name</h2>
+<div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+    <form method="POST" class="w-50">
+        <div class="mb-3">
+            <label for="cityName" class="form-label">City Name</label>
+            <input type="text" class="form-control" id="cityName" placeholder="Enter city name" value="{{name}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
